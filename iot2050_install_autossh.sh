@@ -8,7 +8,7 @@ apt -y install autossh
 cat > /etc/default/autossh <<EOF
 AUTOSSH_GATETIME=0
 AUTOSSH_PORT=222
-SSH_OPTIONS="-N -o 'ServerAliveInterval 60' -o 'ServerAliveCountMax 3' -R $PORT:127.0.0.1:22 ton@remote.sookyenfarm.com"
+SSH_OPTIONS="-N -o 'ServerAliveInterval 60' -o 'ServerAliveCountMax 3' -R $HOST_PORT:127.0.0.1:22 $HOST_USER"
 EOF
 
 cat > /lib/systemd/system/autossh.service <<EOF
