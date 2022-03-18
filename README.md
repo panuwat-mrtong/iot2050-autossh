@@ -1,9 +1,13 @@
 ```
+Local Machine (Anywhere Network) <---> Host (Public Network) <---> Device (Private Network)
+```
+
+```
 # Quick Install (Device)
 export HOST_PORT=2222
 export HOST_USER=user@domain.com
 
-# SSH Key
+# SSH Key Gen
 ssh-keygen
 ssh-copy-id $HOST_USER
 
@@ -14,6 +18,5 @@ curl -sSL https://raw.githubusercontent.com/pornpasok/iot2050-autossh/main/iot20
 
 ```
 # SSH to Device (Local Machine)
-
 ssh root@domain.com -p 2222
 ```
