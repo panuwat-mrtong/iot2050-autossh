@@ -1,6 +1,6 @@
 ```
 # SSH from Anywhere to Device
-[Local Machine] (Anywhere Network) <---> [Host] (Public Network) <---> [Device] (Private Network)
+[Local Machine] (Anywhere) <---> [Host] (Public) <---> [Device] (Private)
 ```
 
 ```
